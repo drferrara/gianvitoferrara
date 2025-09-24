@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    color: #444;
+    background-color: #fdfdfd;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #eef;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url('DrGianvitoFerrara.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-photo {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 40px;
+    border: 8px solid #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: translateY(-10px);
+}
+
+.hero-text h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #0056b3;
+    font-weight: 700;
+}
+
+.hero-text p {
+    font-size: 1.25em;
+    color: #555;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+section:nth-of-type(odd) {
+    background-color: #fff;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #007BFF;
+}
+
+/* About Section */
+#about p {
+    font-size: 1.15em;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+}
+
+/* Services Section */
+.services-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.services-list li {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border-left: 5px solid #007BFF;
+}
+
+.services-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 40px auto;
+}
+
+#contact h2 {
+    color: #fff;
+}
+
+#contact h2::after {
+    background-color: #fff;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#contact a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+#contact a:hover {
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	#hero {
+		flex-direction: column;
+	}
+    .profile-photo {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 180px;
+        height: 180px;
+    }
+    header h1 {
+        font-size: 1.6em;
+    }
+    .hero-text h2 {
+        font-size: 2.2em;
+    }
+    section h2 {
+        font-size: 2em;
+    }
+}
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+.address-hero {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #555;
+    margin-top: 15px;
+}
