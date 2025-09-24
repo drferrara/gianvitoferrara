@@ -92,12 +92,18 @@ nav a.active {
     justify-content: center;
 }
 
+#hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .profile-photo {
     width: 220px;
     height: 220px;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 40px;
     border: 8px solid #fff;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
@@ -108,14 +114,14 @@ nav a.active {
 }
 
 .hero-text h2 {
-    font-size: 3em;
+    font-size: clamp(2.2em, 5vw, 3em);
     margin-bottom: 15px;
     color: #0056b3;
     font-weight: 700;
 }
 
 .hero-text p {
-    font-size: 1.25em;
+    font-size: clamp(1em, 4vw, 1.25em);
     color: #555;
 }
 
@@ -238,13 +244,17 @@ footer p {
 @media (max-width: 768px) {
 	#hero {
 		flex-direction: column;
+	       padding: 40px 20px;
 	}
-    .profile-photo {
-        margin-right: 0;
-        margin-bottom: 20px;
-        width: 180px;
-        height: 180px;
-    }
+	   .hero-text {
+	       padding: 0 10px;
+	   }
+	   .profile-photo {
+	       margin-right: 0;
+	       margin-bottom: 20px;
+	       width: 180px;
+	       height: 180px;
+	   }
     header h1 {
         font-size: 1.6em;
     }
@@ -252,7 +262,7 @@ footer p {
         font-size: 2.2em;
     }
     section h2 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 }
 /* CTA Button */
@@ -285,4 +295,60 @@ footer p {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    background: none;
+    border: none;
+    z-index: 1001;
+}
+
+.hamburger svg {
+    stroke: var(--primary-color);
+}
+
+.icon-close {
+    display: none;
+}
+
+.hamburger.is-active .icon-menu {
+    display: none;
+}
+
+.hamburger.is-active .icon-close {
+    display: block;
+}
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    nav ul.is-active {
+        display: flex;
+    }
+    nav li {
+        text-align: center;
+        padding: 15px 0;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
