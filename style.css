@@ -191,6 +191,8 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .profile-photo {
@@ -411,12 +413,15 @@ footer p {
   }
 
   header h1 {
-    font-size: 1.6em;
+    font-size: 1.4em;
+    margin-left: 10px;
+    text-align: left;
+    line-height: 1.2;
   }
 
   .logo {
     margin: 0;
-    width: 60px;
+    width: 50px;
   }
 
   .hero-text h2 {
@@ -506,14 +511,16 @@ footer p {
   .hamburger {
     display: block;
     position: absolute;
-    top: 25px;
-    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
   }
 
   header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    padding: 0 60px 0 20px;
   }
 
   .floating-cta {
