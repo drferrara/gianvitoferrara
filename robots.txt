@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gianvitoferrara.it/sitemap.xml
+Sitemap: https://drgianvitoferrara.it/sitemap.xml
