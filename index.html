@@ -20,6 +20,9 @@
     <meta property="og:description"
         content="Studio Dentistico del Dr. Gianvito Ferrara a Circello (BN). Offro servizi di estetica dentale, implantologia, ortodonzia invisibile e molto altro.">
     <meta property="og:image" content="https://drgianvitoferrara.it/DrGianvitoFerrara.webp">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -57,12 +60,6 @@
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
           "opens": "09:00",
-          "closes": "13:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "15:00",
           "closes": "19:00"
         },
         {
@@ -94,7 +91,7 @@
           "name": "Quali sono gli orari di apertura?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Dal lunedì al venerdì lo studio è aperto dalle 9:00 alle 13:00 e dalle 15:00 alle 19:00. Il sabato dalle 9:00 alle 13:00. Domenica chiuso."
+            "text": "Dal lunedì al venerdì lo studio è aperto dalle 9:00 alle 19:00. Il sabato dalle 9:00 alle 13:00. Domenica chiuso."
           }
         },
         {
@@ -117,19 +114,22 @@
     }
     </script>
 
+    <link rel="preload" href="fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Vai al contenuto</a>
     <header id="main-header">
         <div class="container">
-            <img src="Solo_Logo_GF_Nero.webp" alt="Logo Dr. Gianvito Ferrara" class="logo" loading="lazy">
+            <img src="Solo_Logo_GF_Nero.webp" alt="Logo Dr. Gianvito Ferrara" class="logo" width="286" height="335" decoding="async">
             <h1>Dr. Gianvito Ferrara</h1>
             <nav>
                 <ul>
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#about">Chi Sono</a></li>
                     <li><a href="#services">Servizi</a></li>
+                    <li><a href="#visit">Prima Visita</a></li>
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contact">Contatti</a></li>
                 </ul>
@@ -151,22 +151,55 @@
         </button>
     </header>
 
-    <main>
+    <main id="main-content">
         <section id="hero">
             <div class="container">
                 <img src="DrGianvitoFerrara.webp" alt="Ritratto del Dr. Gianvito Ferrara, dentista a Circello"
-                    class="profile-photo" loading="lazy">
+                    class="profile-photo" width="1024" height="1024" fetchpriority="high">
                 <div class="hero-text">
                     <h2>Il tuo sorriso, la mia passione.</h2>
                     <p>Con competenza e tecnologie all'avanguardia, mi prendo cura della salute e della bellezza del tuo
                         sorriso.</p>
                 </div>
-                <a href="tel:08241717553" class="cta-button">📞 CHIAMA 0824 1717553</a>
-                <a href="https://wa.me/3908241717553" class="cta-button cta-button-whatsapp" target="_blank"
-                    rel="noopener">💬 WhatsApp</a>
-                <a href="https://www.google.com/maps/search/?api=1&query=Viale+San+Vito+6,+82020+Circello+(BN)"
-                    class="cta-button cta-button-secondary" target="_blank" rel="noopener">🗺️ Indicazioni Stradali</a>
-                <p class="address-hero">📍 Viale San Vito 6, 82020 Circello (BN)</p>
+                <div class="cta-group">
+                    <a href="https://wa.me/3908241717553" class="cta-button cta-button-whatsapp" target="_blank"
+                        rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+                        </svg>
+                        Scrivici su WhatsApp
+                    </a>
+                    <a href="tel:08241717553" class="cta-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        Chiama 0824 1717553
+                    </a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Viale+San+Vito+6,+82020+Circello+(BN)"
+                        class="cta-button cta-button-secondary" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        Indicazioni Stradali
+                    </a>
+                </div>
+                <p class="address-hero">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Viale San Vito 6, 82020 Circello (BN)
+                </p>
             </div>
         </section>
 
@@ -218,6 +251,43 @@
             </div>
         </section>
 
+        <section id="visit">
+            <div class="container">
+                <h2>Come si svolge la prima visita</h2>
+                <p class="visit-intro">Un percorso semplice e trasparente, passo dopo passo.</p>
+                <ol class="visit-steps">
+                    <li>
+                        <span class="step-number">1</span>
+                        <div>
+                            <h3>Contatto e appuntamento</h3>
+                            <p>Chiama o scrivi su WhatsApp per fissare un appuntamento in un orario comodo per te.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-number">2</span>
+                        <div>
+                            <h3>Visita e diagnosi</h3>
+                            <p>Valutazione clinica accurata e, se necessario, esami digitali per una diagnosi precisa.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-number">3</span>
+                        <div>
+                            <h3>Piano di cure personalizzato</h3>
+                            <p>Ti presento un piano di cure dettagliato con i costi previsti, senza sorprese.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-number">4</span>
+                        <div>
+                            <h3>Inizio del trattamento</h3>
+                            <p>Iniziamo il percorso con tecnologie moderne e un follow-up costante.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
         <section id="faq">
             <div class="container">
                 <h2>Domande Frequenti</h2>
@@ -233,8 +303,8 @@
                     <details class="faq-item">
                         <summary>Quali sono gli orari di apertura?</summary>
                         <p>Dal <strong>lunedì al venerdì</strong> lo studio è aperto dalle <strong>9:00 alle
-                                13:00</strong> e dalle <strong>15:00 alle 19:00</strong>. Il <strong>sabato</strong>
-                            dalle <strong>9:00 alle 13:00</strong>. Domenica chiuso.</p>
+                                19:00</strong>. Il <strong>sabato</strong> dalle <strong>9:00 alle 13:00</strong>.
+                            Domenica chiuso.</p>
                     </details>
                     <details class="faq-item">
                         <summary>Come posso prenotare una visita?</summary>
@@ -257,17 +327,16 @@
                 <h2>Contatti</h2>
                 <p>Per prenotare una visita o per qualsiasi informazione, non esitare a contattarmi.</p>
                 <div class="contact-info">
-                    <p><strong>📞 Chiama:</strong> <a href="tel:08241717553">0824 1717553</a></p>
-                    <p><strong>💬 WhatsApp:</strong> <a href="https://wa.me/3908241717553" target="_blank"
-                        rel="noopener">Scrivici su WhatsApp</a></p>
-                    <p><strong>📍 Indirizzo:</strong> Viale San Vito 6, 82020 Circello (BN)</p>
-                    <p><a href="https://www.google.com/maps/search/?api=1&query=Viale+San+Vito+6,+82020+Circello+(BN)"
-                        target="_blank" rel="noopener">🗺️ Apri in Google Maps</a></p>
+                    <p><strong><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Chiama:</strong> <a href="tel:08241717553">0824 1717553</a></p>
+                    <p><strong><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg> WhatsApp:</strong> <a href="https://wa.me/3908241717553" target="_blank" rel="noopener">Scrivici su WhatsApp</a></p>
+                    <p><strong><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg> Email:</strong> <a href="mailto:drgianvitoferrara@gmail.com">drgianvitoferrara@gmail.com</a></p>
+                    <p><strong><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Indirizzo:</strong> Viale San Vito 6, 82020 Circello (BN)</p>
+                    <p><a href="https://www.google.com/maps/search/?api=1&query=Viale+San+Vito+6,+82020+Circello+(BN)" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Apri in Google Maps</a></p>
                 </div>
                 <div class="hours-box">
-                    <p class="hours-title">🕐 Orari di Apertura</p>
+                    <p class="hours-title"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Orari di Apertura</p>
                     <ul>
-                        <li><span>Lunedì – Venerdì</span><span>9:00 – 13:00 / 15:00 – 19:00</span></li>
+                        <li><span>Lunedì – Venerdì</span><span>9:00 – 19:00</span></li>
                         <li><span>Sabato</span><span>9:00 – 13:00</span></li>
                         <li><span>Domenica</span><span>Chiuso</span></li>
                     </ul>
@@ -300,11 +369,29 @@
     <script>
         const hamburgerMenu = document.getElementById('hamburger-menu');
         const navUL = document.querySelector('nav ul');
+        const header = document.getElementById('main-header');
+
+        function closeMenu() {
+            if (navUL.classList.contains('is-active')) {
+                navUL.classList.remove('is-active');
+                hamburgerMenu.classList.remove('is-active');
+                hamburgerMenu.setAttribute('aria-expanded', 'false');
+            }
+        }
 
         hamburgerMenu.addEventListener('click', () => {
             const isActive = hamburgerMenu.classList.toggle('is-active');
             navUL.classList.toggle('is-active');
             hamburgerMenu.setAttribute('aria-expanded', isActive);
+        });
+
+        // Chiudi il menu mobile con Esc o clic fuori dall'header
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeMenu();
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('header')) closeMenu();
         });
 
         // Aggiungi un elegante effetto di fade-in allo scroll per le sezioni
@@ -321,35 +408,56 @@
             observer.observe(section);
         });
 
+        // Evidenzia il link di navigazione della sezione visibile
+        const navLinks = document.querySelectorAll('nav a[href^="#"]');
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    navLinks.forEach(link => {
+                        const isActive = link.getAttribute('href') === '#' + id;
+                        if (isActive) {
+                            link.classList.add('active');
+                            link.setAttribute('aria-current', 'true');
+                        } else {
+                            link.classList.remove('active');
+                            link.removeAttribute('aria-current');
+                        }
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+
+        document.querySelectorAll('section[id]').forEach(section => sectionObserver.observe(section));
+
         // Smart Navbar: nascondi in scroll giù, mostra in scroll su
         let lastScrollTop = 0;
-        const header = document.getElementById('main-header');
         const headerHeight = header.offsetHeight;
 
         window.addEventListener('scroll', () => {
             let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
             if (scrollTop > lastScrollTop && scrollTop > headerHeight) {
-                // Scroll in giù: nascondi header e chiudi menu
                 header.style.transform = `translateY(-${headerHeight}px)`;
-                if (navUL.classList.contains('is-active')) {
-                    hamburgerMenu.click();
-                }
+                closeMenu();
             } else {
-                // Scroll in su: mostra header
                 header.style.transform = 'translateY(0)';
             }
             lastScrollTop = Math.max(0, scrollTop);
-        }, { passive: true });
 
-        // Aggiungi classe ombra allo scroll
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 10) {
+            if (scrollTop > 10) {
                 header.classList.add('scrolled');
             } else {
                 header.classList.remove('scrolled');
             }
         }, { passive: true });
+
+        // Offset per gli anchor sotto l'header sticky
+        function setScrollMargin() {
+            document.documentElement.style.setProperty('--header-offset', header.offsetHeight + 'px');
+        }
+        setScrollMargin();
+        window.addEventListener('resize', setScrollMargin);
 
         // Aggiorna l'anno automaticamente quando il footer è caricato
         document.addEventListener('DOMContentLoaded', () => {
@@ -362,7 +470,8 @@
 
     <footer>
         <div class="container">
-            <p>&copy; <span id="current-year">2024</span> Dr. Gianvito Ferrara — Odontoiatra</p>
+            <p>&copy; <span id="current-year">2026</span> Dr. Gianvito Ferrara — Odontoiatra</p>
+            <p class="footer-contact"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg><a href="mailto:drgianvitoferrara@gmail.com">drgianvitoferrara@gmail.com</a></p>
             <p class="legal-line">STUDIO DENTISTICO FERRARA S.T.P. S.R.L. — P.IVA/C.F. 01892660620 — Sede legale e operativa: Viale San Vito 6, 82020 Circello (BN)</p>
             <p class="legal-line">Dr. Gianvito Ferrara — Odontoiatra — Albo degli Odontoiatri dell'Ordine dei Medici Chirurghi e degli Odontoiatri di Benevento n. 325</p>
             <p class="cookie-note">Questo sito non utilizza cookie né strumenti di tracciamento. · <a href="privacy.html">Privacy Policy e Note Legali</a></p>
